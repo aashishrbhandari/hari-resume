@@ -37,11 +37,12 @@
 
                         <div class="card">
                             <div class="" style="position: absolute; top: 0px; right: 0px;">
-                                <!--
-                                <a href="#" target="_blank" class="btn btn-secondary btn-float-color">
-                                    Resume
+                                
+                                <a href="data/Resume/Hari_Singh_Bhandari_Resume(Aug-2021).pdf" target="_blank" class="btn btn-secondary btn-float-color resume-btn" style="display: none;">
+                                    Resume &nbsp;
+                                    <img src="images/svg/download_white1.svg" alt="">
                                 </a>
-                                -->
+
                             </div>
                         </div>
 
@@ -91,6 +92,7 @@
     
             function main() {
                 loadResumeCard();
+                setTimeout(() => { document.querySelector(".resume-btn").style.display = "block";  }, 2500)
             }
     
             main();
